@@ -1,0 +1,816 @@
+<style>
+  .mobile_all_login_details {
+    display: none;
+  }
+
+  .center_img {
+    background-position: center;
+  }
+
+  .banner-5-txt {
+    min-height: 300px;
+    padding: 25px 35px;
+  }
+
+
+</style>
+<link href="css/logo-slider.css" rel="stylesheet">
+<!-- start of hero -->
+<link href="css/swiper.min.css" rel="stylesheet">
+<link href="css/all.min.css" rel="stylesheet">
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<style>
+
+</style>
+<section class="hero-slider hero-style chirtmas_login" is-home-page="isHomePage">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-inner slide-bg-image center_img"
+          style="background-image:url('images/slider_images/02_01_23_slider_1.jpg');">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</section>
+<div class="bootom-tile-section">
+  <div class="container align-ic-center">
+    <div class="row">
+      <div class="d-flex d-flex-block align-items-center tile-height">
+        <div class="col-md-3 col-sm-6 col-xs-3 bottom-tile-slider">
+          <a href="" title="Examination Form">
+            <div class="abox-1 icon-xs"> <i class="fab fa-wpforms tile-icons"></i>
+              <div class="abox-1-txt">
+                <h5 class="h5-md"> Examination Form</h5>
+                <p class="p-md">Fill up the examination form</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-3 bottom-tile-slider">
+          <a href="" title="View Result 2022">
+            <div class="abox-1 icon-xs"><i class="fa fa-eye tile-icons" aria-hidden="true"></i>
+              <div class="abox-1-txt">
+                <h5 class="h5-md">View Result 2023</h5>
+                <p class="p-md">View your results easily</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-3 bottom-tile-slider">
+          <a href="" title="Online Classes">
+            <div class="abox-1 icon-xs"><i class="fa fa-chalkboard tile-icons" aria-hidden="true"></i>
+              <div class="abox-1-txt">
+                <h5 class="h5-md"> Online Classes</h5>
+                <p class="p-md">Attend the classes digitally</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-3 bottom-tile-slider">
+          <div class="abox-1 icon-xs news-height">
+            <i class="fa fa-eye tile-icons viewmore-notice-btn" aria-hidden="true"></i>
+            <div class="abox-1-txt">
+              <h5 class="h5-md viewmore-notice-btn">Notices & Updates</h5>
+
+              <ul class="news-section ul_class_imp demo1">
+                <li class="news-item text-white"><a target="_blank"
+                    href="images/notice_board/Neurotherapy_Courses_Brochure.pdf">Neurotherapy
+                    Courses Brochure Click here</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<div class="uni_mainWrapper">
+  <div class="container">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-8">
+
+            <div class="online_wrapper">
+
+              <div class="admission_div">
+                <form method="post" name="admission_form" id="admission_form" enctype="multipart/form-data">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="common_details">
+                        <div class="col-md-12">
+                          <h3>REQUEST INFORMATION</h3>
+                          <small>Please provide your personal details</small>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="col-md-4">
+
+                        <div class="form-group">
+                          <label>First Name <span class="req">*</span></label>
+                          <input type="text" name="student_name" id="student_name" class="form-control charector"
+                            placeholder="Student Full Name" value="" onkeyup="uniqueStudent()">
+                          <div class="error" id="student_error"></div>
+                          <input type="hidden" name="old_student_id" id="old_student_id" value="">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>Last Name <span class="req">*</span></label>
+                          <input type="text" name="father_name" id="father_name" class="form-control charector"
+                            placeholder="Fathers Name" value="" onkeyup="uniqueStudent()">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>Email ID <span class="req">*</span></label>
+                          <input autocomplete="off" type="email" name="email" id="email" class="form-control"
+                            placeholder="Email ID" value="">
+                          <div class="error" id="email_error"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>Mobile Number <span class="req">*</span></label>
+                          <input autocomplete="off" type="text" name="mobile" id="mobile"
+                            class="form-control number_only" placeholder="Mobile Number" maxlength="10" minlength="10"
+                            value="">
+                          <div class="error" id="mobile_error"></div>
+                        </div>
+                      </div>
+                      <!-- <div class="col-md-4">
+                        <div class="form-group">
+                          <label>Gender <span class="req">*</span></label>
+                          <select id="gender" name="gender" class="form-control">
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Transgender">Transgender</option>
+                          </select>
+                        </div>
+                      </div> -->
+                      <div class="col-sm-4">
+                        <div class="form-group">
+                          <label>Country <span class="req">*</span></label>
+                          <select class="form-control js-example-basic-single" name="country" id="country">
+                            <option value="">Select Country</option>
+                            <option value="1">Afghanistan</option>
+                            <option value="2">Albania</option>
+                            <option value="3">Algeria</option>
+                            <option value="4">American Samoa</option>
+                            <option value="5">Andorra</option>
+                            <option value="6">Angola</option>
+                            <option value="7">Anguilla</option>
+                            <option value="8">Antarctica</option>
+                            <option value="9">Antigua And Barbuda</option>
+                            <option value="10">Argentina</option>
+                            <option value="11">Armenia</option>
+                            <option value="12">Aruba</option>
+                            <option value="13">Australia</option>
+                            <option value="14">Austria</option>
+                            <option value="15">Azerbaijan</option>
+                            <option value="16">Bahamas The</option>
+                            <option value="17">Bahrain</option>
+                            <option value="18">Bangladesh</option>
+                            <option value="19">Barbados</option>
+                            <option value="20">Belarus</option>
+                            <option value="21">Belgium</option>
+                            <option value="22">Belize</option>
+                            <option value="23">Benin</option>
+                            <option value="24">Bermuda</option>
+                            <option value="25">Bhutan</option>
+                            <option value="26">Bolivia</option>
+                            <option value="27">Bosnia and Herzegovina</option>
+                            <option value="28">Botswana</option>
+                            <option value="29">Bouvet Island</option>
+                            <option value="30">Brazil</option>
+                            <option value="31">British Indian Ocean Territory</option>
+                            <option value="32">Brunei</option>
+                            <option value="33">Bulgaria</option>
+                            <option value="34">Burkina Faso</option>
+                            <option value="35">Burundi</option>
+                            <option value="36">Cambodia</option>
+                            <option value="37">Cameroon</option>
+                            <option value="38">Canada</option>
+                            <option value="39">Cape Verde</option>
+                            <option value="40">Cayman Islands</option>
+                            <option value="41">Central African Republic</option>
+                            <option value="42">Chad</option>
+                            <option value="43">Chile</option>
+                            <option value="44">China</option>
+                            <option value="45">Christmas Island</option>
+                            <option value="46">Cocos (Keeling) Islands</option>
+                            <option value="47">Colombia</option>
+                            <option value="48">Comoros</option>
+                            <option value="49">Congo</option>
+                            <option value="50">Congo The Democratic Republic Of The</option>
+                            <option value="51">Cook Islands</option>
+                            <option value="52">Costa Rica</option>
+                            <option value="53">Cote D'Ivoire (Ivory Coast)</option>
+                            <option value="54">Croatia (Hrvatska)</option>
+                            <option value="55">Cuba</option>
+                            <option value="56">Cyprus</option>
+                            <option value="57">Czech Republic</option>
+                            <option value="58">Denmark</option>
+                            <option value="59">Djibouti</option>
+                            <option value="60">Dominica</option>
+                            <option value="61">Dominican Republic</option>
+                            <option value="62">East Timor</option>
+                            <option value="63">Ecuador</option>
+                            <option value="64">Egypt</option>
+                            <option value="65">El Salvador</option>
+                            <option value="66">Equatorial Guinea</option>
+                            <option value="67">Eritrea</option>
+                            <option value="68">Estonia</option>
+                            <option value="69">Ethiopia</option>
+                            <option value="70">External Territories of Australia</option>
+                            <option value="71">Falkland Islands</option>
+                            <option value="72">Faroe Islands</option>
+                            <option value="73">Fiji Islands</option>
+                            <option value="74">Finland</option>
+                            <option value="75">France</option>
+                            <option value="76">French Guiana</option>
+                            <option value="77">French Polynesia</option>
+                            <option value="78">French Southern Territories</option>
+                            <option value="79">Gabon</option>
+                            <option value="80">Gambia The</option>
+                            <option value="81">Georgia</option>
+                            <option value="82">Germany</option>
+                            <option value="83">Ghana</option>
+                            <option value="84">Gibraltar</option>
+                            <option value="85">Greece</option>
+                            <option value="86">Greenland</option>
+                            <option value="87">Grenada</option>
+                            <option value="88">Guadeloupe</option>
+                            <option value="89">Guam</option>
+                            <option value="90">Guatemala</option>
+                            <option value="91">Guernsey and Alderney</option>
+                            <option value="92">Guinea</option>
+                            <option value="93">Guinea-Bissau</option>
+                            <option value="94">Guyana</option>
+                            <option value="95">Haiti</option>
+                            <option value="96">Heard and McDonald Islands</option>
+                            <option value="97">Honduras</option>
+                            <option value="98">Hong Kong S.A.R.</option>
+                            <option value="99">Hungary</option>
+                            <option value="100">Iceland</option>
+                            <option value="101">India</option>
+                            <option value="102">Indonesia</option>
+                            <option value="103">Iran</option>
+                            <option value="104">Iraq</option>
+                            <option value="105">Ireland</option>
+                            <option value="106">Israel</option>
+                            <option value="107">Italy</option>
+                            <option value="108">Jamaica</option>
+                            <option value="109">Japan</option>
+                            <option value="110">Jersey</option>
+                            <option value="111">Jordan</option>
+                            <option value="112">Kazakhstan</option>
+                            <option value="113">Kenya</option>
+                            <option value="114">Kiribati</option>
+                            <option value="115">Korea North</option>
+                            <option value="116">Korea South</option>
+                            <option value="117">Kuwait</option>
+                            <option value="118">Kyrgyzstan</option>
+                            <option value="119">Laos</option>
+                            <option value="120">Latvia</option>
+                            <option value="121">Lebanon</option>
+                            <option value="122">Lesotho</option>
+                            <option value="123">Liberia</option>
+                            <option value="124">Libya</option>
+                            <option value="125">Liechtenstein</option>
+                            <option value="126">Lithuania</option>
+                            <option value="127">Luxembourg</option>
+                            <option value="128">Macau S.A.R.</option>
+                            <option value="129">Macedonia</option>
+                            <option value="130">Madagascar</option>
+                            <option value="131">Malawi</option>
+                            <option value="132">Malaysia</option>
+                            <option value="133">Maldives</option>
+                            <option value="134">Mali</option>
+                            <option value="135">Malta</option>
+                            <option value="136">Man (Isle of)</option>
+                            <option value="137">Marshall Islands</option>
+                            <option value="138">Martinique</option>
+                            <option value="139">Mauritania</option>
+                            <option value="140">Mauritius</option>
+                            <option value="141">Mayotte</option>
+                            <option value="142">Mexico</option>
+                            <option value="143">Micronesia</option>
+                            <option value="144">Moldova</option>
+                            <option value="145">Monaco</option>
+                            <option value="146">Mongolia</option>
+                            <option value="147">Montserrat</option>
+                            <option value="148">Morocco</option>
+                            <option value="149">Mozambique</option>
+                            <option value="150">Myanmar</option>
+                            <option value="151">Namibia</option>
+                            <option value="152">Nauru</option>
+                            <option value="153">Nepal</option>
+                            <option value="154">Netherlands Antilles</option>
+                            <option value="155">Netherlands The</option>
+                            <option value="156">New Caledonia</option>
+                            <option value="157">New Zealand</option>
+                            <option value="158">Nicaragua</option>
+                            <option value="159">Niger</option>
+                            <option value="160">Nigeria</option>
+                            <option value="161">Niue</option>
+                            <option value="162">Norfolk Island</option>
+                            <option value="163">Northern Mariana Islands</option>
+                            <option value="164">Norway</option>
+                            <option value="165">Oman</option>
+                            <option value="166">Pakistan</option>
+                            <option value="167">Palau</option>
+                            <option value="168">Palestinian Territory Occupied</option>
+                            <option value="169">Panama</option>
+                            <option value="170">Papua new Guinea</option>
+                            <option value="171">Paraguay</option>
+                            <option value="172">Peru</option>
+                            <option value="173">Philippines</option>
+                            <option value="174">Pitcairn Island</option>
+                            <option value="175">Poland</option>
+                            <option value="176">Portugal</option>
+                            <option value="177">Puerto Rico</option>
+                            <option value="178">Qatar</option>
+                            <option value="179">Reunion</option>
+                            <option value="180">Romania</option>
+                            <option value="181">Russia</option>
+                            <option value="182">Rwanda</option>
+                            <option value="183">Saint Helena</option>
+                            <option value="184">Saint Kitts And Nevis</option>
+                            <option value="185">Saint Lucia</option>
+                            <option value="186">Saint Pierre and Miquelon</option>
+                            <option value="187">Saint Vincent And The Grenadines</option>
+                            <option value="188">Samoa</option>
+                            <option value="189">San Marino</option>
+                            <option value="190">Sao Tome and Principe</option>
+                            <option value="191">Saudi Arabia</option>
+                            <option value="192">Senegal</option>
+                            <option value="193">Serbia</option>
+                            <option value="194">Seychelles</option>
+                            <option value="195">Sierra Leone</option>
+                            <option value="196">Singapore</option>
+                            <option value="197">Slovakia</option>
+                            <option value="198">Slovenia</option>
+                            <option value="199">Smaller Territories of the UK</option>
+                            <option value="200">Solomon Islands</option>
+                            <option value="201">Somalia</option>
+                            <option value="202">South Africa</option>
+                            <option value="203">South Georgia</option>
+                            <option value="204">South Sudan</option>
+                            <option value="205">Spain</option>
+                            <option value="206">Sri Lanka</option>
+                            <option value="207">Sudan</option>
+                            <option value="208">Suriname</option>
+                            <option value="209">Svalbard And Jan Mayen Islands</option>
+                            <option value="210">Swaziland</option>
+                            <option value="211">Sweden</option>
+                            <option value="212">Switzerland</option>
+                            <option value="213">Syria</option>
+                            <option value="214">Taiwan</option>
+                            <option value="215">Tajikistan</option>
+                            <option value="216">Tanzania</option>
+                            <option value="217">Thailand</option>
+                            <option value="218">Togo</option>
+                            <option value="219">Tokelau</option>
+                            <option value="220">Tonga</option>
+                            <option value="221">Trinidad And Tobago</option>
+                            <option value="222">Tunisia</option>
+                            <option value="223">Turkey</option>
+                            <option value="224">Turkmenistan</option>
+                            <option value="225">Turks And Caicos Islands</option>
+                            <option value="226">Tuvalu</option>
+                            <option value="227">Uganda</option>
+                            <option value="228">Ukraine</option>
+                            <option value="229">United Arab Emirates</option>
+                            <option value="230">United Kingdom</option>
+                            <option value="231">United States</option>
+                            <option value="232">United States Minor Outlying Islands</option>
+                            <option value="233">Uruguay</option>
+                            <option value="234">Uzbekistan</option>
+                            <option value="235">Vanuatu</option>
+                            <option value="236">Vatican City State (Holy See)</option>
+                            <option value="237">Venezuela</option>
+                            <option value="238">Vietnam</option>
+                            <option value="239">Virgin Islands (British)</option>
+                            <option value="240">Virgin Islands (US)</option>
+                            <option value="241">Wallis And Futuna Islands</option>
+                            <option value="242">Western Sahara</option>
+                            <option value="243">Yemen</option>
+                            <option value="244">Yugoslavia</option>
+                            <option value="245">Zambia</option>
+                            <option value="246">Zimbabwe</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>Academic course <span class="req">*</span></label>
+                          <select id="gender" name="gender" class="form-control">
+                            <option value="BA (AS)">Associate in Business Administration</option>
+                            <option value="BE (AS)">Associate in Business Entrepreneurship</option>
+                            <option value="BAMMIS (BS)">Bachelor's Degree in Business Administration with a major in
+                              Management Information Systems</option>
+                            <option value="HSA (BS)">Bachelor's Degree in Health Services Administration</option>
+                            <option value="MAS (BS)">Bachelor's Degree in Marketing and Sale</option>
+                            <option value="BA (MBA)">Master's Degree in Business Administration</option>
+                            <option value="MBAHRM">Master's Degree in Business Administration in Human Resources
+                              Management</option>
+                            <option value="(M.ED)">Master's Degree in Education with Concentration in Digital
+                              Technologies</option>
+                          </select>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-12">
+                    <!-- <div class="row">
+                      <div class="col-md-12 edu">
+                        <div class="form-group">
+                          <input type="checkbox" name="mycheckbox" id="mycheckbox" value="0" required="required" />
+                          <label style="color:red">I Agree to the declaration<span class="req">*</span></label>
+                        </div>
+                      </div>
+                    </div> -->
+                    <!-- <div class="row">
+                    <div class="col-md-2 edu">
+                      <strong>Captcha <span class="req">*</span></strong>
+                    </div>
+                    <div class="col-md-6 edu">
+                      <div class="form-group">
+                                            <div class="g-recaptcha" data-sitekey="6Ld04bQZAAAAAESEZ2t9Z8jge9k860wPt59Pcwus"></div>
+                                          </div>
+                    </div>
+                  </div> -->
+                    <div class="row">
+                      <div class="col-md-12 edu">
+                        <div class="form-group">
+                          <label></label>
+                          <button type="submit" class="btn btn-primary" name="register" id="register">Save</button>
+                          <div class="pull-right">
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="clearfix"></div>
+
+              </div>
+            </div>
+
+            <div class="col-md-2">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<section class="about-new">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="images/h1-banner1.png" class="about-us-img" alt="BIR">
+      </div>
+      <div class="col-md-6">
+        <div class="about-us-content align-items-center">
+          <span class="sub-title-abt">About us</span>
+          <h2 class="about-heading-title">Expanding and raising the level of education.</h2>
+          <p class="abt-p">Bir Tikendrajit University is a new age university driving individual
+            empowerment and social progress through blended learning.</p>
+          <div class="row">
+            <div class="col-md-6 col-xs-12 col-sm-6">
+              <div class="support-card">
+                <div class="card-icon">
+                  <img src="images/experience1.png">
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title card-title-style">Experience </h3>
+                  <p class="abt-p">Our team has more than 4 years of unbeatable experience in
+                    guiding the students to a better future.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-6">
+              <div class="support-card">
+                <div class="card-icon"><img src="images/support1.png">
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title card-title-style">
+                    Quick Support </h3>
+                  <p class="abt-p">Our team will be there for you wherever you are stuck.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="abt-p">The University has a curriculum designed by experts that can prepare students
+            for leadership roles in society.</p>
+          <!-- <a href="" class="read-more-btn"><span> </span></a> -->
+          <div class="text-center-mob">
+            <!-- <a href="">
+                          <button class="button-read-more"><span>Read More </span></button>
+                      </a> -->
+            <a href="/about-us">
+              <button class="button-find-out"><span>Read More</span></button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="video-bg-section" style="min-height: 300px;height: auto;">
+  <div class="container">
+    <div class="guide-content">
+      <h3 class="section-head"> Is WES accepted in the USA? </h3>
+      <p class="guide-p">
+        WES evaluations are recognized and accepted by universities, licensing boards, government agencies and employers
+        throughout the U.S. WES is the largest and among the oldest of the evaluation services the U.S.
+        <br />
+        Each year, WES prepares evaluations for approximately 50,000 individuals from all over the world.
+      </p>
+    </div>
+  </div>
+  <!-- <div class="container">
+    <div class="play-btn play-btn-rose text-center"><a href="#test-popup"
+        class="open-popup-link video-popup3 video-play-button" href="#"><span></span></a><img class="img-fluid"
+        src="images/video-pf.jpg" alt="video-preview"></div>
+  </div> -->
+</section>
+
+<!-- Design 2 -->
+<!-- <section class="become-collaborator">
+  <div class="container">
+    <div class="become-collaborator-head-content">
+      <h3 class="section-head become-coll">Our Courses </h3>
+      <p>
+        Right from its inception, BIR TIKENDRAJIT UNIVERSITY has been focused on raising overall standards by
+        benchmarking with the best in the world and by putting greater emphasis on research, innovation, and
+        employability.
+      </p>
+    </div>
+    <div class="row mob-center-col">
+      <div class="col-md-6 col-sm-6 col-xs-12 ">
+        <div class="banner-5-txt"><img src="images/courses/bechalar-of-arts.jpg" alt="Associate">
+          <div class="b5-txt">
+            <h4 class="h4-xs">Business Entrepreneurship</h4>
+            <p>It is the process of developing, organizing and managing a new business to generate profit while assuming
+              financial risk. </p>
+            <a href="course/business-entrepreneurship">
+              <button class="button-find-out"><span>Read More</span></button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12 ">
+        <div class="banner-5-txt"><img src="images/courses/Bachelor-of-Commerce.jpg" alt="Associate">
+          <div class="b5-txt">
+            <h4 class="h4-xs">Business Administration</h4>
+            <p>Business administration oversees the general operations of an organization or department. This may
+              include teams support and supervision, problem solving, developing and implementing plans, and meeting
+              goals. </p>
+            <a href="/course/business-administration">
+              <button class="button-find-out"><span>Read More</span></button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section> -->
+ <!-- design 2 course -->
+
+<section class="top-courses">
+  <div class="container">
+    <div class="courses-head-content">
+      <h3 class="section-head">Our Course</h3>
+      <p>
+        Choose from 77+ undergraduate postgraduate courses in Management, Innovation, Science, Data, and
+        more.
+        <br>Gain new skills and earn a certificate of completion.
+      </p>
+    </div>
+    <div data-ng-include="'templates/course-content.html'"></div>
+  </div>
+
+</section>
+
+
+
+
+<section class="why-choose-section">
+  <div class="uni_welcome_box">
+    <div class="why-choose-content">
+      <h3 class="section-head">Why Bir Tikendrajit University?</h3>
+      <p class="p-md">BIR TIKENDRAJIT UNIVERSITY has always endeavored to deliver quality education in a globally
+        benchmarked hi-tech learning environment that facilitates the ardent pursuit of excellence through education and
+        beyond, in letter and spirit. </p>
+    </div>
+    <div class="">
+      <div class="col-lg-6">
+        <div class="uni_welcome_left">
+          <!-- <h2>Why <span class="">BIR TIKENDRAJIT UNIVERSITY?</span></h2> -->
+          <ul>
+            <li>
+              <div class="uni_wel_list">
+                <div class="uni_circle"></div>
+                <div class="uni_info">
+                  <h6>Vision<h6>
+                      <p>
+                      <p>Bir Tikendrajit University will have a trans formative impact on
+                        society through continual innovation in education, research, and
+                        creativity.</p>
+                      </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="uni_wel_list">
+                <div class="uni_circle"></div>
+                <div class="uni_info">
+                  <h6> Campus <h6>
+                      <p>
+                      <p>Bir Tikendrajit University with its future-ready, sprawling campus, a
+                        world - class learning infrastructure. The campus facilitates
+                        all-round growth of students.</p>
+                      </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="uni_wel_list">
+                <div class="uni_circle"></div>
+                <div class="uni_info">
+                  <h6>Expertise staff<h6>
+                      <p>Particularly through more coordinated and tailored attention to building
+                        the leadership skills necessary to meet the goals of the University.</p>
+                </div>
+              </div>
+            </li>
+            <li style="height: 160px;">
+              <div class="uni_wel_list">
+                <div class="uni_circle"></div>
+                <div class="uni_info">
+                  <h6>Education <h6>
+                      <p>The education provided by our university in order to prepare students to
+                        work in various sectors. The totality of general and specialised
+                        knowledge and skills that enable a university graduate to solve problems
+                        that he encounters in industry or to perform scientific research or
+                        pedagogical work within the area of specialised knowledge that he has
+                        acquired.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="awards-section-slider">
+          <h4 class="awards-title">Awards</h4>
+          <div class="owl-carousel carousel-awards">
+            <div class="slide-box"><a href="awards.html">
+                <div class=""><img src="images/awards/award-2.png" alt="category-icon" />
+                </div>
+              </a>
+            </div>
+            <div class="slide-box"><a href="awards.html">
+                <div class=""><img src="images/awards/award-2.png" alt="category-icon" />
+                </div>
+              </a>
+            </div>
+            <div class="slide-box"><a href="awards.html">
+                <div class=""><img src="images/awards/award-2.png" alt="category-icon" />
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+</section>
+
+<section class="testimonial-area">
+  <div class="container">
+    <div class="sec-title white-title">
+      <h2 class="section-head">Testimonials</h2>
+      <p class="p-md">Here is an honest endorsement of our Students.
+        Read what current and alumni have to say about their BIR TIKENDRAJIT UNIVERSITY EXPERIENCE</p>
+    </div>
+    <div class="testimonial-content owl-carousel">
+      <!-- Single Testimonial -->
+      <div class="single-testimonial">
+        <div class="round-1 round"></div>
+        <div class="round-2 round"></div>
+        <p>I have been blessed with great faculty members, students, friends, and admin staff.
+          One of the best universities in Manipur.
+          It's not just a college, it's emotion </p>
+        <div class="client-info">
+          <div class="client-video">
+            <a href="#"><img src="images/play-button.png" alt="University"></a>
+          </div>
+          <div class="client-details">
+            <h6>Shahnawaz Yousuf Dar</h6>
+            <span>Network Engineer</span>
+          </div>
+        </div>
+      </div>
+      <!-- Single Testimonial -->
+      <div class="single-testimonial">
+        <div class="round-1 round"></div>
+        <div class="round-2 round"></div>
+        <p>This college is excellent with experienced staff. . The campus is very good.
+          One of the best universities in Manipur. A nice place is good for youngsters for studies.</p>
+        <div class="client-info">
+          <div class="client-video">
+            <a href="#"><img src="images/play-button.png" alt="College"></a>
+          </div>
+          <div class="client-details">
+            <h6>Manashi Bhattacharjee</h6>
+            <span>HR Manager</span>
+          </div>
+        </div>
+      </div>
+      <!-- Single Testimonial -->
+      <div class="single-testimonial">
+        <div class="round-1 round"></div>
+        <div class="round-2 round"></div>
+        <p>No words to express BIR TIKENDRAJIT UNIVERSITY its simply Outstanding in every aspect.... whether it's study,
+          sports, or any social activities. The best thing about this University is Well Qualified, Enthusiastic,
+          Supportive, Loving, and Caring Teaching And Non-Teaching staff. I feel so proud that I was a part of this
+          family...!!! </p>
+        <div class="client-info">
+          <div class="client-video">
+            <a href="#"><img src="images/play-button.png" alt="campus"></a>
+          </div>
+          <div class="client-details">
+            <h6>MD. Moynal Hoque</h6>
+            <span>Professor</span>
+          </div>
+        </div>
+      </div>
+      <!-- Single Testimonial -->
+      <div class="single-testimonial">
+        <div class="round-1 round"></div>
+        <div class="round-2 round"></div>
+        <p>One of the best universities for Science students.😊 I am a pass-out student from the same university and
+          glad to tell you that the chemistry department is my Favourite for under graduation and post-graduation.</p>
+        <div class="client-info">
+          <div class="client-video">
+            <a href="#"><img src="images/play-button.png" alt="Science"></a>
+          </div>
+          <div class="client-details">
+            <h6>Raju Sahu</h6>
+            <span>Network Architecture</span>
+          </div>
+        </div>
+      </div>
+      <!-- Single Testimonial -->
+      <div class="single-testimonial">
+        <div class="round-1 round"></div>
+        <div class="round-2 round"></div>
+        <p>A very reputed institute in Manipur offering a variety of courses under the banner of Progressive Education
+          Society... Having a good infrastructure with experienced faculties and a lot of courses.</p>
+        <div class="client-info">
+          <div class="client-video">
+            <a href="#"><img src="images/play-button.png" alt="carrer"></a>
+          </div>
+          <div class="client-details">
+            <h6>Mukesh Saini</h6>
+            <span>Professor</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
